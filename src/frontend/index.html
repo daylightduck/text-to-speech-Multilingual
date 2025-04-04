@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech Converter</h1>
+        <div class="input-section">
+            <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+            
+            <div class="voice-selection">
+                <label for="voiceSelect">Select Voice:</label>
+                <div class="voice-options" id="voiceOptions">
+                    <!-- Voice options will be dynamically populated -->
+                </div>
+            </div>
+            
+            <div class="device-selection">
+                <label>Processing Device:</label>
+                <div class="device-options" id="deviceOptions">
+                    <!-- Device options will be dynamically populated -->
+                </div>
+            </div>
+            
+            <button id="convertBtn">Convert to Speech</button>
+        </div>
+        <div class="output-section">
+            <audio id="audioPlayer" controls style="display: none;">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="history-section">
+            <h2>Conversion History</h2>
+            <div class="history-container" id="historyContainer">
+                <!-- This will be populated with conversion history items -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
+
